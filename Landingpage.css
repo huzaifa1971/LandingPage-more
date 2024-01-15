@@ -1,0 +1,206 @@
+/* Reset some default styles */
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styling for the page */
+body {
+  background-color: #702f09;
+  
+}
+
+/* header {
+    
+    color: #fff;
+    text-align: center;
+    background-size: cover;
+    padding: 209px;
+    background-repeat: no-repeat;
+} */
+.topnav {
+  position: fixed;
+  overflow: hidden;
+  background-color: #702f09;
+  width: 100%;
+  opacity: 80%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: #fff7b5;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  color: #fff7b5;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.contentcenter {
+  text-align: center;
+}
+
+.content-column {
+  flex: 1;
+  background-color: #c38f28;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #1d0d02;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #1d0d02;
+}
+.alignleft {
+  text-align: left;
+}
+img {
+  border-radius: 10px;
+  border: 3px solid #702f09;
+  box-shadow: 0 0 20px #702f09;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  height: auto;
+  width: 100vw;
+  padding-top: 40px;
+  color: #fff;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3 {
+  font-size: 2.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p {
+  max-width: 800px;
+  /* margin: 10px auto; */
+  line-height: 28px;
+  font-size: 14px;
+  color: #c38f28;
+}
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 1rem 0;
+}
+.socials li {
+  margin: 0 10px;
+}
+.socials a {
+  text-decoration: none;
+  color: #fffcc2;
+  border: 1.1px solid white;
+  padding: 5px;
+  border-radius: 50%;
+}
+.socials a i {
+  font-size: 1.1rem;
+  width: 20px;
+  transition: color 0.4s ease;
+}
+.socials a:hover i {
+  color: #c38f28;
+}
+.footer-bottom {
+  background: #200e04;
+  width: 100%;
+  padding: 10px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.footer-bottom p {
+  float: left;
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+  color: #fffcc2;
+}
+.footer-bottom p a {
+  color: #c38f28;
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 200;
+}
+.footer-menu {
+  float: right;
+}
+
+.footer-menu ul {
+  display: flex;
+}
+
+.footer-menu ul li {
+  padding-right: 10px;
+  display: block;
+}
+
+.footer-menu ul li a {
+  color: #fffcc2;
+  text-decoration: none;
+}
+
+.footer-menu ul li a:hover {
+  color: #c38f28;
+}
+.bg {
+  /* The image used */
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+  .content-column {
+    margin: 10px 0;
+  }
+}
